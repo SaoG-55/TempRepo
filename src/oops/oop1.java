@@ -83,11 +83,11 @@ public class oop1 {
 //			System.out.println(s[i].marks);
 //		}
 		
-		s[0]=new Student(1,90.7f,"sao");
-		
-		System.out.println(s[0].rollno);
+//		s[0]=new Student(1,90.7f,"sao");
+//		
+//		System.out.println(s[0].rollno);
 		s[1]=new Student(2,90.7f,"sar");
-		s[3]=new Student(3,90.7f,"swe");
+//		s[3]=new Student(3,90.7f,"swe");
 		s[4]=new Student();
 		
 		//passing another instance of object in another object
@@ -100,8 +100,20 @@ public class oop1 {
 		System.out.println(s[2].rollno);
 		
 		
+		
 		//in java primitive data types are not objects they are stored in stack memory
 		//heap memory is slow
+		
+		//three in stack memory will point to the same obj as one is pointing in heap memory
+//		making a copy of the reference variable one
+		Student one=new Student();
+		one.rollno=2;
+		Student three=one;
+		
+		System.out.println("Three"+three.rollno);
+		
+		
+		
 	}
 
 }
